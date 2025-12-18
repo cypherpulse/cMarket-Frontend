@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* cMarket Design System - Dark Web3 Theme with Celo Gold Accent */
+
+@layer base {
+  :root {
+    /* Dark theme as default for Web3 aesthetic */
+    --background: 222 47% 5%;
+    --foreground: 60 9% 98%;
+
+    --card: 222 47% 8%;
+    --card-foreground: 60 9% 98%;
+
+    --popover: 222 47% 8%;
+    --popover-foreground: 60 9% 98%;
+
+    /* Celo Gold/Yellow as primary */
+    --primary: 45 93% 58%;
+    --primary-foreground: 222 47% 5%;
+
+    --secondary: 222 30% 15%;
+    --secondary-foreground: 60 9% 98%;
+
+    --muted: 222 30% 12%;
+    --muted-foreground: 220 15% 55%;
+
+    --accent: 160 84% 39%;
+    --accent-foreground: 60 9% 98%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 60 9% 98%;
+
+    --border: 222 30% 18%;
+    --input: 222 30% 18%;
+    --ring: 45 93% 58%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 222 47% 6%;
+    --sidebar-foreground: 60 9% 98%;
+    --sidebar-primary: 45 93% 58%;
+    --sidebar-primary-foreground: 222 47% 5%;
+    --sidebar-accent: 222 30% 15%;
+    --sidebar-accent-foreground: 60 9% 98%;
+    --sidebar-border: 222 30% 18%;
+    --sidebar-ring: 45 93% 58%;
+  }
+
+  .light {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 45 93% 47%;
+    --primary-foreground: 222 47% 5%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 160 84% 39%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 45 93% 47%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent;
+  }
+
+  .glass {
+    @apply bg-card/50 backdrop-blur-xl border border-border/50;
+  }
+}
