@@ -21,7 +21,7 @@ A decentralized marketplace built on the Celo blockchain, enabling trustless pee
 
 ## 🚀 Live Demo
 
-- **Mainnet**: [celo-market-hub.vercel.app](https://celo-market-hub.vercel.app)
+- **Mainnet**: [cmarket-seven.vercel.app](https://cmarket-seven.vercel.app)
 - **Testnet**: [testnet.celo-market-hub.vercel.app](https://testnet.celo-market-hub.vercel.app)
 
 ## 🏗️ System Architecture
@@ -230,7 +230,7 @@ celo-market-hub/
 
 3. **Deploy**
    - Push to main branch or deploy manually
-   - App will be live at `your-project.vercel.app`
+   - App will be live at `cmarket-seven.vercel.app`
 
 ### Other Platforms
 
