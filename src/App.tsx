@@ -28,8 +28,8 @@ createAppKit({
   metadata: {
     name: 'Celo Market Hub',
     description: 'Decentralized marketplace on Celo blockchain',
-    url: 'https://celo-market-hub.vercel.app',
-    icons: ['https://celo-market-hub.vercel.app/icon.png']
+    url: 'https://cmarket-seven.vercel.app',
+    icons: ['https://cmarket-seven.vercel.app/icon.png']
   },
   features: {
     analytics: true
